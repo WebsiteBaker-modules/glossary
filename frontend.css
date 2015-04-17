@@ -1,0 +1,26 @@
+/**
+ *	Modul:	Glossary
+ *	File:	Frontend-CSS
+ */
+div.glossary {
+	text-align: center;
+}
+
+.glossary_letter {
+	font-weight: bold;
+	color: #990000;
+}
+.glossary_term {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+dl.glossary_list {
+	text-align: left;
+	margin-left: 23px;
+}
+
+dd {
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}

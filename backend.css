@@ -1,0 +1,28 @@
+/**
+ *	Module:	Glossary
+ *	File:	Backend-CSS
+ *			0.1.0
+ */
+form[name='edit_module_file'] {
+	display: block;
+	float: right;
+	width: 100%;
+	text-align: right;
+}
+
+.list_term, .list_pro, .list_def, .list_mod, .list_del, .list_act {
+	display: block;
+	float: left;
+	width: 140px;
+	height: 20px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.list_mod, .list_del, .list_act {
+	width: 20px;
+	text-align: center;
+}
+
+.list_def {
+	width: 400px;
+}

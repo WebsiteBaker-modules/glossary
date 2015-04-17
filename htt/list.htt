@@ -1,0 +1,43 @@
+<!-- BEGIN main_block -->
+<script type="text/javascript">
+var WB_URL='{WB_URL}';
+</script>
+<h2>{modify_delete}</h2>
+<form action="{WB_URL}/modules/glossary/delete_term.php" method="POST" class="glossary_form" id="glossary_form_{section_id}">
+	<input type="hidden" name="section_id" value="{section_id}" />
+	<input type="hidden" name="page_id" value="{page_id}" />
+	<input type="hidden" name="term_id" value="-1" />
+	<input type="hidden" name="job" value="delete" />
+	{ftan}
+	{leptoken}
+	<!-- start table -->
+	<table class="glossary_list">
+	<!-- BEGIN tr_block -->
+		<tr class="list_tr">
+			<td class="list_term">
+				<a href="#" onclick="do_job({section_id}, '', '1', '{term_id}');" alt="{MODIFY}" title="{MODIFY}">{term}</a>
+			</td>
+			<td class="list_pro">
+				<a href="#" onclick="do_job({section_id}, '', '1', '{term_id}');" alt="{MODIFY}" title="{MODIFY}">{pronunciation}</a>
+			</td>
+			<td class="list_def">
+				<a href="#" onclick="do_job({section_id}, '', '1', '{term_id}');" alt="{MODIFY}" title="{MODIFY}">{definition}</a>
+			</td>
+			<td class="list_act">
+				<img src="{icon_url}/images/{plus_or_minus}" border="0" alt="{status}" title="{status}" />
+			</td>
+			<td class="list_mod">
+				<a href="#" onclick="do_job({section_id}, '', '1', '{term_id}');" title="{MODIFY}">
+					<img src="{icon_url}/images/modify_16.png" border="0" alt="{MODIFY}" title="{MODIFY}" />
+				</a>
+			</td>
+			<td class="list_del">
+				<a href="#" onclick="do_job({section_id}, '{ARE_YOU_SURE}', '0', '{term_id}');" title="Delete">
+					<img src="{icon_url}/images/delete_16.png" border="0" alt="{DELETE}" />
+				</a>
+			</td>
+		</tr>	
+	<!-- END tr_block -->
+	</table>
+</form>
+<!-- END main_block -->
